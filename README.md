@@ -1,5 +1,5 @@
 # ML-React-App
-It's a template on which we can build a React app and call endpoints to make predictions about fractal dimension calculation.
+It's a template on which we can build a React app and call endpoints to make predictions about fractal dimension analysis.
 
 ## Install
 
