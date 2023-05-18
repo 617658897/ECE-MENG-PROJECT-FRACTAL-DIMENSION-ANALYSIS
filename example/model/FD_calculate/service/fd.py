@@ -18,12 +18,15 @@ from pyomo.environ import *
 # solver_path = 'D:\\cbc\\bin\\cbc.exe'
 # solver = SolverFactory('cbc', executable=solver_path)
 
-img = np.array(mpimg.imread(os.path.join(
-    "C:/Users/zhao xianmin/Desktop/way/output.png")))
+# img = np.array(mpimg.imread(os.path.join(
+#     "C:/Users/zhao xianmin/Desktop/way/output.png")))
 
+img_path = "C:/Users/zhao xianmin/Desktop/way/output.png"
+img = mpimg.imread(img_path)
+if img.shape != (165, 165, 3):
+    img = cv2.resize(img, (165, 165))
 
 # 03 convert image into gray scale
-
 
 def rgbgray(rgb):
     r = rgb[:, :, 0]

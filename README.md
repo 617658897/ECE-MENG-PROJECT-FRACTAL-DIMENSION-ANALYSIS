@@ -12,8 +12,7 @@ $ yarn install
 $ npm install -g serve
 ```
 ```sh
-$ npm run build
-```
+$ npm run build```
 ```sh
 $ serve -s build -l 3000
 ```
